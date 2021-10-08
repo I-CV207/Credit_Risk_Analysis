@@ -1,4 +1,4 @@
-# Credit_Risk_Analysis
+# Credit Risk Analysis
 
 ## Overview:
 
@@ -64,6 +64,6 @@ From this model we got the following results:
 
 ## Summary:
 
-From all 6 models, they all seem to share similar precision, however by this metric alone we cannot 
-There is a summary of the results (2 pt)
-There is a recommendation on which model to use, or there is no recommendation with a justification (3 pt)
+While looking at the results of all 6 models, we see that they seem to share similar precision scores, however by this metric alone we cannot imply that they are equally good or bad, on the contrary, as we are tryiyng to predict the risk of credit loans (high or low), recall and acurracy are the metrics to look at in this particular case. With this in mind the recommended model is ***AdaBoost Classifier*** as it has an accuraccy of .93 meaning that 9 out of 10 loans will be classified correctly has low or high risk, also by looking at the recall scores of credit loans classified as either high risk or low risk credit loans (0.92  and 0.94 respectively) 9 out of 10 classifications as either high or low are actually true correct on their classification.
+
+To improve our model even further we can also use as reference the ***Balance Random Forest Classifier***, as we got the "feature importances" of our dataset we can take a look at the variables that have more influence in determining our result and therefore consider such variables for future models or adjustments to our model.
